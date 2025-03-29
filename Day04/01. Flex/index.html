@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Flex</title>
+  </head>
+  <body>
+    <!-- https://tailwindcss.com/docs/flex -->
+    <div class="border m-10">
+      <h1 class="text-center text-4xl">Flex</h1>
+      <!-- Flex property -->
+      <ul class="flex">
+        <li class="bg-teal-100 m-5 p-5">01</li>
+        <li class="bg-teal-100 m-5 p-5">02</li>
+        <li class="bg-teal-100 m-5 p-5">03</li>
+        <li class="bg-teal-100 m-5 p-5">04</li>
+        <li class="bg-teal-100 m-5 p-5">05</li>
+      </ul>
+    </div>
+
+    <!-- https://tailwindcss.com/docs/flex-direction#column -->
+    <div class="border m-10">
+      <h1 class="text-center text-4xl">Flex Column</h1>
+      <!-- Flex Column property -->
+      <ul class="flex flex-col">
+        <li class="bg-teal-100 m-5 p-5">01</li>
+        <li class="bg-teal-100 m-5 p-5">02</li>
+        <li class="bg-teal-100 m-5 p-5">03</li>
+        <li class="bg-teal-100 m-5 p-5">04</li>
+        <li class="bg-teal-100 m-5 p-5">05</li>
+      </ul>
+    </div>
+
+    <!-- https://tailwindcss.com/docs/justify-items -->
+    <div class="border m-10">
+      <h1 class="text-center text-4xl">justify-start</h1>
+      <div class="border">
+        <!-- Flex Justify-Start property -->
+        <ul class="flex justify-start">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+
+      <h1 class="text-center text-4xl">justify-end</h1>
+      <div class="border">
+        <!-- Flex Justify-End property -->
+        <ul class="flex justify-end">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+
+      <h1 class="text-center text-4xl">justify-center</h1>
+      <div class="border">
+        <!-- Flex Justify-Center property -->
+        <ul class="flex justify-center">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+
+      <h1 class="text-center text-4xl">justify-between</h1>
+      <div class="border">
+        <!-- Flex Justify-Between property -->
+        <ul class="flex justify-between">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+
+      <h1 class="text-center text-4xl">justify-around</h1>
+      <div class="border">
+        <!-- Flex Justify-Around property -->
+        <ul class="flex justify-around">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- https://tailwindcss.com/docs/align-items -->
+    <div class="border m-10">
+      <h1 class="text-center text-4xl">item-start</h1>
+      <div class="border">
+        <!-- Flex item-Start property -->
+        <ul class="flex items-start w-[300px] h-[400px]">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+
+      <h1 class="text-center text-4xl">item-center</h1>
+      <div class="border">
+        <!-- Flex item-Center property -->
+        <ul class="flex items-center w-[300px] h-[400px]">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+
+      <h1 class="text-center text-4xl">item-end</h1>
+      <div class="border">
+        <!-- Flex item-End property -->
+        <ul class="flex items-end w-[300px] h-[400px]">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+
+      <h1 class="text-center text-4xl">item-baseline</h1>
+      <div class="border">
+        <!-- Flex item-Baseline property -->
+        <ul class="flex items-baseline w-[300px] h-[400px]">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+
+      <h1 class="text-center text-4xl">item-stretch</h1>
+      <div class="border">
+        <!-- Flex item-Stretch property -->
+        <ul class="flex items-stretch w-[300px] h-[400px]">
+          <li class="bg-teal-100 m-5 p-5">01</li>
+          <li class="bg-teal-100 m-5 p-5">02</li>
+          <li class="bg-teal-100 m-5 p-5">03</li>
+          <li class="bg-teal-100 m-5 p-5">04</li>
+          <li class="bg-teal-100 m-5 p-5">05</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- https://tailwindcss.com/docs/order -->
+    <div class="border m-10">
+      <h1 class="text-center text-4xl ">Order</h1>
+      <ul class="flex">
+        <li class="bg-teal-100 m-5 p-5 order-5">01</li>
+        <li class="bg-teal-100 m-5 p-5 order-4">02</li>
+        <li class="bg-teal-100 m-5 p-5 order-3">03</li>
+        <li class="bg-teal-100 m-5 p-5 order-2">04</li>
+        <li class="bg-teal-100 m-5 p-5 order-1">05</li>
+      </ul>
+    </div>
+
+
+    <!------------------Center a div ---------------->
+    <div class="border-2 m-20 bg-gray-200 h-[500px]">
+        <h1 class="text-center text-3xl">Center a div</h1>
+        <div class="flex justify-center items-center h-full">
+          <div class="bg-teal-100 w-[100px] h-[100px]">
+            <p class="text-center mt-9">Center</p>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
