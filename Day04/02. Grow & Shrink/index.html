@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Grow & Shrink</title>
+
+</head>
+<body>
+     <!-- Grow and shrink -->
+    <!-- https://tailwindcss.com/docs/flex-shrink -->
+    <div class="border m-10">
+        <h1 class="text-center text-4xl">Grow and shrink</h1>
+
+      <div class="flex w-100">
+        <!-- flex-none: Prevent item from growing or shrinking -->
+        <div class="p-5 m-3 w-64 bg-teal-100 flex-none">growing or shrinking</div>
+        <!-- flex-initial:  Allow item to shrink but not grow, taking into account its initial size  -->
+        <div class="p-5 m-3 w-64 bg-teal-100 flex-initial">shrink but not grow</div>
+        <!-- flex-auto: Allow item to grow and shrink, taking into account its initial size -->
+        <div class="p-5 m-3 w-64 bg-teal-100 flex-auto">Allow item to grow and shrink taking into account its initial size</div>
+        <!-- flex-1: Allow item to grow and shrink as needed, ignoring its initial size -->
+        <div class="p-5 m-3 w-64 bg-teal-100 flex-1">item to grow and shrink as needed</div>
+        <div class="p-5 m-3 bg-teal-100">05</div>
+        <div class="p-5 m-3 bg-teal-100">06</div>
+        <div class="p-5 m-3 bg-teal-100">07</div>
+      </div>
+    </div>
+</body>
+</html>
