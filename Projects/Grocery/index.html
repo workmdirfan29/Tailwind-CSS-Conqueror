@@ -9,26 +9,34 @@
 <body class="bg-gray-100 text-gray-800">
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-md">
-    <div class="max-w-7xl mx-auto px-2 py-4 flex justify-between items-center">
+  <nav class="bg-white shadow-md px-14">
+    <div class="max-w-auto  px-2 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-green-600">GreenBasket</h1>
       <div class="space-x-4">
-        <a href="#home" class="font-bold hover:text-green-700  ">Home</a>
-        <a href="./pages/Shop/Shop.html" class="font-bold hover:text-green-600 ">Shop</a>
-        <a href="./pages/YourOrder/Order.html"class="font-bold hover:text-green-600 ">Your Order</a>
-        <a href="./pages/Addtocart/Addtocart.html" class="font-bold hover:text-green-600 ">Add to Cart</a>
-        <a href="./pages/Login/Login.html"class="font-bold hover:text-green-600">Login</a>
+        <a href="../Grocery/index.html" class="text-[1.4rem] font-semibold hover:bg-green-600 hover:text-white px-3 py-2 rounded hover:text-green-700 duration-200 ease-in-out ">Home</a>
+        <a href="./pages/Shop/Shop.html" class="text-[1.4rem] font-semibold hover:bg-green-600 hover:text-white px-3 py-2 rounded hover:text-green-600 duration-200 ease-in-out">Shop</a>
+        <a href="./pages/YourOrder/Order.html"class="text-[1.4rem] font-semibold hover:bg-green-600 hover:text-white px-3 py-2 rounded hover:text-green-600 duration-200 ease-in-out">Your Order</a>
+        <a href="./pages/Addtocart/Addtocart.html" class="text-[1.4rem] font-semibold hover:bg-green-600 hover:text-white px-3 py-2 rounded hover:text-green-600 duration-200 ease-in-out">Add to Cart</a>
+        <button class="font-semibold hover:bg-green-600 hover:text-white px-3 py-1 rounded text-[1.4rem] px-3 bg-green-600 text-white rounded ease-out"><a href="./pages/Login/Login.html">Login</a>
+        </button>
       </div>
     </div>
   </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="bg-green-400 py-20 text-center">
-    <h2 class="text-4xl font-bold mb-4">Welcome to FreshGrocer</h2>
-    <p class="text-lg text-gray-700">Your one-stop shop for fresh groceries delivered to your door.</p>
-  </section>
-
-  <!-- Products Section -->
+  <header>
+    <section class="relative flex items-center justify-center h-[44rem] overflow-hidden">
+      <div class="absolute inset-0 z-0 w-full h-full ">
+        <img src="../../assets/supermarket-banner-concept-with-ingredients.jpg" alt="Vegetables" class="w-full h-full object-cover opacity-90 " />
+      </div>
+  
+      <!-- Content -->
+      <div class="relative z-10 text-center text-white px-4">
+        <h1 class="text-8xl font-semi-bold text-[#030] mb-4">Welcome to GreenBasket</h1>
+        <h2 class="text-5xl font-medium text-black px-3 rounded-md inline-block">
+          Your one-stop shop for fresh groceries delivered to your door.
+        </h2>
+      </div>
+    </section>
+  </header>
   <section id="shop" class="max-w-7xl mx-auto px-4 py-10">
     <h3 class="text-3xl font-bold mb-6 text-center">Our Products</h3>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -55,13 +63,7 @@
       </div>
     </div>
   </section>
-
-
-
-  <!-- Footer -->
-  <footer class="bg-white text-center py-4 mt-10 border-t">
-    <p>&copy; 2025 FreshGrocer. All rights reserved.</p>
-  </footer>
+  
 
 </body>
 </html>
