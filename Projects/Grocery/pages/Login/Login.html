@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>This is login page</h1>
+
+  <div class="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center opacity-80 z-0"
+      style="background-image: url('https://images.pexels.com/photos/7879906/pexels-photo-7879906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');"
+    ></div>
+
+    <div class="relative z-10 w-full max-w-md bg-transparent backdrop-blur-sm p-8 rounded-lg shadow-2xl border-2 border-green-200
+">
+      <h2 class="text-3xl font-bold text-green-700 text-center mb-6">Green Basket Login</h2>
+      
+      <form action="/login" method="POST" class="space-y-5">
+        <div>
+          <label for="username" class="block text-sm font-medium text-black">Email or Username</label>
+          <input type="email" id="username" name="username" required
+            class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"/>
+        </div>
+
+        <div>
+          <label for="password" class="block text-sm font-medium text-black">Password</label>
+          <input type="password" id="password" name="password" required
+            class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"/>
+        </div>
+
+        <button type="submit"
+          class="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition duration-300">
+          Login
+        </button>
+      </form>
+
+      <p class="text-center text-md text-black mt-6">
+        Don’t have an account?
+        <a href="./Signup.html" class="text-green-900 hover:underline text-md font-bold">Sign up</a>
+      </p>
+    </div>
+  </div>
 </body>
 </html>
