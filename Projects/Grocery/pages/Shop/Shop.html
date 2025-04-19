@@ -1,11 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>this is shop page </h1>
+<body class="bg-green-50 text-gray-800">
+
+  <nav class="bg-white shadow-md px-14 w-full h-[9vh]">
+    <div class="max-w-auto px-2 py-4 flex justify-between items-center">
+      <h1 class="flex gap-1 text-2xl font-bold text-green-600">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bucket-fill" viewBox="0 0 16 16">
+          <path d="M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5m1.005 0a4.5 4.5 0 0 1 8.945 0z"/>
+        </svg>
+        GreenBasket
+      </h1>
+      <div class="flex items-center gap-4">
+        <a href="../../index.html" class="text-[1.1rem] font-semibold hover:bg-green-600 hover:text-white px-3 py-1 rounded duration-200">Home</a>
+        <a href="#" class="text-[1.1rem] font-semibold bg-green-600 text-white px-4 py-1 rounded duration-200">Shop</a>
+        <a href="./pages/YourOrder/Order.html" class="text-[1.1rem] font-semibold hover:bg-green-600 hover:text-white px-3 py-1 rounded duration-200">Your Order</a>
+        
+        <a href="./pages/Addtocart/Addtocart.html" class="flex items-center gap-1 text-[1.1rem] font-semibold hover:bg-green-600 hover:text-white px-3 py-1 rounded duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+            <path d="..." />
+          </svg> 
+          Cart
+        </a>
+        <input
+          type="text"
+          id="searchInput"
+          oninput="filterProducts()"
+          placeholder="Search products..."
+          class="px-3 py-1 text-sm border rounded-md border-green-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+        />
+
+        <a href="./pages/Login/Login.html" class="ml-3 font-semibold hover:bg-green-700 hover:text-white px-6 py-1 rounded text-[1.2rem] bg-green-500 text-white duration-200">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-green-100 py-16 text-center">
+    <h2 class="text-4xl font-bold text-green-800 mb-4">Fresh From the Farm</h2>
+    <p class="text-lg text-green-700 max-w-xl mx-auto">Shop our selection of organic fruits, vegetables, and healthy products delivered right to your doorstep.</p>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-bold text-green-800 mb-8">Shop Products</h3>
+
+      <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- ✅ Each product should have data-name attribute for filtering -->
+
+        <div class="product-card bg-white shadow rounded-lg p-4 hover:shadow-lg transition" data-name="tomatoes">
+          <img src="https://images.pexels.com/photos/96616/pexels-photo-96616.jpeg" alt="Tomatoes"
+            class="w-full h-40 object-cover rounded-md mb-4" />
+          <h4 class="text-lg font-semibold text-green-800">Fresh Tomatoes</h4>
+          <p class="text-sm text-gray-600">500g pack</p>
+          <div class="mt-2 flex justify-between items-center">
+            <span class="text-green-600 font-bold">$2.99</span>
+            <button class="bg-green-600 text-white text-sm px-3 py-1 rounded hover:bg-green-700">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card bg-white shadow rounded-lg p-4 hover:shadow-lg transition" data-name="bananas">
+          <img src="https://images.pexels.com/photos/61127/pexels-photo-61127.jpeg" alt="Bananas"
+            class="w-full h-40 object-cover rounded-md mb-4" />
+          <h4 class="text-lg font-semibold text-green-800">Organic Bananas</h4>
+          <p class="text-sm text-gray-600">1kg bunch</p>
+          <div class="mt-2 flex justify-between items-center">
+            <span class="text-green-600 font-bold">$3.50</span>
+            <button class="bg-green-600 text-white text-sm px-3 py-1 rounded hover:bg-green-700">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card bg-white shadow rounded-lg p-4 hover:shadow-lg transition" data-name="lettuce">
+          <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2" alt="Lettuce"
+            class="w-full h-40 object-cover rounded-md mb-4" />
+          <h4 class="text-lg font-semibold text-green-800">Crisp Lettuce</h4>
+          <p class="text-sm text-gray-600">Fresh & green</p>
+          <div class="mt-2 flex justify-between items-center">
+            <span class="text-green-600 font-bold">$1.99</span>
+            <button class="bg-green-600 text-white text-sm px-3 py-1 rounded hover:bg-green-700">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card bg-white shadow rounded-lg p-4 hover:shadow-lg transition" data-name="apples">
+          <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="Apples"
+            class="w-full h-40 object-cover rounded-md mb-4" />
+          <h4 class="text-lg font-semibold text-green-800">Red Apples</h4>
+          <p class="text-sm text-gray-600">Crispy sweet 1kg</p>
+          <div class="mt-2 flex justify-between items-center">
+            <span class="text-green-600 font-bold">$4.20</span>
+            <button class="bg-green-600 text-white text-sm px-3 py-1 rounded hover:bg-green-700">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200">
+    <div class="container mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm text-gray-600">
+      <div>
+        <h4 class="font-semibold text-green-800 mb-2">Green Basket</h4>
+        <p>Fresh organic groceries at your doorstep.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-green-800 mb-2">Quick Links</h4>
+        <ul class="space-y-1">
+          <li><a href="/shop.html" class="hover:underline">Shop</a></li>
+          <li><a href="/about.html" class="hover:underline">About Us</a></li>
+          <li><a href="/contact.html" class="hover:underline">Contact</a></li>
+          <li><a href="/login.html" class="hover:underline">Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-green-800 mb-2">Contact</h4>
+        <p>Email: support@greenbasket.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <p>Location: New York, USA</p>
+      </div>
+    </div>
+    <div class="text-center py-4 text-xs text-gray-500 border-t mt-4">
+      &copy; 2025 Green Basket. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- ✅ Product Filtering Script -->
+  <script>
+    function filterProducts() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const products = document.querySelectorAll(".product-card");
+
+      products.forEach(product => {
+        const name = product.getAttribute("data-name").toLowerCase();
+        if (name.includes(input)) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      });
+    }
+  </script>
 </body>
 </html>
