@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenBasket</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>this is about pages</h1>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-14 w-full h-[9vh]">
+    <div class="max-w-auto px-2 py-4 flex justify-between items-center">
+      <h1 class="flex gap-1 text-2xl font-bold text-green-600">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bucket-fill" viewBox="0 0 16 16">
+          <path d="M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5m1.005 0a4.5 4.5 0 0 1 8.945 0z"/>
+        </svg>
+        GreenBasket
+      </h1>
+      <div class="flex items-center gap-4">
+        <a href="../Grocery/index.html" class="text-[1.1rem] font-semibold hover:bg-green-600 hover:text-white px-3 py-1 rounded duration-200">Home</a>
+        <a href="./pages/Shop/Shop.html" class="text-[1.1rem] font-semibold hover:bg-green-600 hover:text-white px-4 py-1 rounded duration-200">Shop</a>
+        <a href="./pages/YourOrder/Order.html" class="text-[1.1rem] font-semibold hover:bg-green-600 hover:text-white px-3 py-1 rounded duration-200">Your Order</a>
+        <a href="./pages/Addtocart/Addtocart.html" class="flex gap-1 items-center text-[1.1rem] font-semibold hover:bg-green-600 hover:text-white px-3 py-1 rounded duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5..."/>
+          </svg>
+          Cart
+        </a>
+        <a href="./pages/Login/Login.html" class="ml-3 font-semibold hover:bg-green-700 hover:text-white px-6 py-1 rounded text-[1.2rem] bg-green-500 text-white duration-200">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="max-w-5xl mx-auto py-16 px-6">
+    <h2 class="text-5xl font-bold text-center text-green-700 mb-8">About Us</h2>
+    <p class="text-lg text-gray-700 leading-8 mb-6">
+      At <strong>GreenBasket</strong>, we believe in providing the freshest and most organic produce directly to your doorstep. Founded in 2025, our mission is to make healthy living simple and accessible for everyone.
+    </p>
+    <p class="text-lg text-gray-700 leading-8 mb-6">
+      From locally-sourced fruits and vegetables to sustainable dairy and pantry essentials, GreenBasket is your one-stop shop for groceries that care about you and the planet.
+    </p>
+    <p class="text-lg text-gray-700 leading-8 mb-6">
+      We work closely with trusted farmers and ethical suppliers to ensure every item meets our quality standards. Whether you're planning a big family dinner or just restocking your fridge, we’ve got your basket covered.
+    </p>
+    <div class="mt-10 flex justify-center">
+      <img src="../../assets/fresh-groceries.jpg" alt="Our Team" class="rounded-lg shadow-lg w-full max-w-2xl">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200">
+    <div class="container mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm text-gray-600">
+      <div>
+        <h4 class="font-semibold text-green-800 mb-2">Green Basket</h4>
+        <p>Fresh organic groceries at your doorstep.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-green-800 mb-2">Quick Links</h4>
+        <ul class="space-y-1">
+          <li><a href="./pages/Shop/Shop.html" class="hover:underline">Shop</a></li>
+          <li><a href="/about.html" class="hover:underline">About Us</a></li>
+          <li><a href="./pages/AboutUs/AboutUs.html" class="hover:underline">Contact</a></li>
+          <li><a href="./pages/Login/Login.html" class="hover:underline">Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-green-800 mb-2">Contact</h4>
+        <p>Email: support@greenbasket.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <p>Location: New York, USA</p>
+      </div>
+    </div>
+    <div class="text-center py-4 text-xs text-gray-500 border-t mt-4">
+      &copy; 2025 Green Basket. All rights reserved.
+    </div>
+  </footer>
+
 </body>
 </html>
