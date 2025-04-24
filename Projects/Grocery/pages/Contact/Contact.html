@@ -1,11 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | GreenBasket</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>this is contact page</h1>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-14 w-full h-[9vh]">
+    <div class="max-w-auto px-2 py-4 flex justify-between items-center">
+      <h1 class="flex gap-1 text-2xl font-bold text-green-600">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bucket-fill" viewBox="0 0 16 16">
+          <path d="M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5m1.005 0a4.5 4.5 0 0 1 8.945 0z"/>
+        </svg>
+        GreenBasket
+      </h1>
+      <div class="flex items-center gap-4">
+        <a href="../Grocery/index.html" class="text-[1.1rem] font-semibold hover:bg-green-600 hover:text-white px-3 py-1 rounded duration-200">Home</a>
+        <a href="./pages/Shop/Shop.html" class="text-[1.1rem] font-semibold hover:bg-green-600 hover:text-white px-4 py-1 rounded duration-200">Shop</a>
+        <a href="./pages/YourOrder/Order.html" class="text-[1.1rem] font-semibold hover:bg-green-600 hover:text-white px-3 py-1 rounded duration-200">Your Order</a>
+        <a href="./pages/Addtocart/Addtocart.html" class="flex gap-1 items-center text-[1.1rem] font-semibold hover:bg-green-600 hover:text-white px-3 py-1 rounded duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5..."/>
+          </svg>
+          Cart
+        </a>
+        <a href="./pages/Login/Login.html" class="ml-3 font-semibold hover:bg-green-700 hover:text-white px-6 py-1 rounded text-[1.2rem] bg-green-500 text-white duration-200">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="max-w-5xl mx-auto py-16 px-6">
+    <h2 class="text-5xl font-bold text-center text-green-700 mb-10">Get in Touch</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Contact Form -->
+      <form class="bg-white p-8 rounded-lg shadow-md space-y-6" id="contactForm">
+        <div>
+          <label class="block text-gray-700 font-medium">Name</label>
+          <input type="text" id="name" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"/>
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Email</label>
+          <input type="email" id="email" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"/>
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium">Message</label>
+          <textarea id="message" rows="5" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+        </div>
+        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded duration-200">Send Message</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="bg-white p-8 rounded-lg shadow-md space-y-6">
+        <div>
+          <h4 class="text-xl font-semibold text-green-700">Email</h4>
+          <p class="text-gray-600">support@greenbasket.com</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-green-700">Phone</h4>
+          <p class="text-gray-600">+1 (123) 456-7890</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-green-700">Location</h4>
+          <p class="text-gray-600">New York, USA</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-green-700">Working Hours</h4>
+          <p class="text-gray-600">Mon - Fri: 9:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dynamic Message Output -->
+    <div id="output" class="max-w-xl mx-auto mt-8"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200">
+    <div class="container mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm text-gray-600">
+      <div>
+        <h4 class="font-semibold text-green-800 mb-2">Green Basket</h4>
+        <p>Fresh organic groceries at your doorstep.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-green-800 mb-2">Quick Links</h4>
+        <ul class="space-y-1">
+          <li><a href="../Shop/Shop.html" class="hover:underline">Shop</a></li>
+          <li><a href="../AboutUs/AboutUs.html" class="hover:underline">About Us</a></li>
+          <li><a href="./Contact.html" class="hover:underline">Contact</a></li>
+          <li><a href="../Login/Login.html" class="hover:underline">Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-green-800 mb-2">Contact</h4>
+        <p>Email: support@greenbasket.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <p>Location: New York, USA</p>
+      </div>
+    </div>
+    <div class="text-center py-4 text-xs text-gray-500 border-t mt-4">
+      &copy; 2025 Green Basket. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JavaScript to Handle Form -->
+  <script>
+    const form = document.getElementById("contactForm");
+    const output = document.getElementById("output");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (name && email && message) {
+        output.innerHTML = `
+          <div class="bg-green-100 border border-green-300 rounded p-4 text-green-800 shadow-md">
+            <h3 class="font-bold text-lg mb-2">Thank you, ${name}!</h3>
+            <p>We've received your message:</p>
+            <blockquote class="italic mt-2 border-l-4 border-green-400 pl-3">${message}</blockquote>
+            <p class="mt-2 text-sm text-gray-600">We’ll get back to you at <strong>${email}</strong> soon.</p>
+          </div>
+        `;
+        form.reset();
+      } else {
+        output.innerHTML = `
+          <div class="bg-red-100 border border-red-300 rounded p-4 text-red-800 shadow-md">
+            Please fill out all fields before submitting.
+          </div>
+        `;
+      }
+    });
+  </script>
+
 </body>
 </html>
