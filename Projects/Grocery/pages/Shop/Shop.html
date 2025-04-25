@@ -31,13 +31,14 @@
         
         <input type="text" id="searchInput" oninput="filterProducts()" placeholder="Search products..." class="px-3 py-1 text-sm border rounded-md border-green-300 focus:outline-none focus:ring-2 focus:ring-green-500" />
         
-        <select id="categoryFilter" onchange="filterProducts()" class="text-sm border border-green-300 rounded px-2 py-1 focus:ring-2 focus:ring-green-500">
-          <option value="">All Categories</option>
-          <option value="fruit">Fruit</option>
-          <option value="vegetable">Vegetable</option>
-          <option value="dairy">Dairy</option>
-          <option value="nuts">Nuts</option>
-        </select>
+      <select id="categoryFilter" onchange="filterProducts()" class="text-sm border border-green-500 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500">
+            <option value="">All Categories</option>
+            <option value="fruit" class="">Fruit</option>
+            <option value="vegetable">Vegetable</option>
+            <option value="dairy">Dairy</option>
+            <option value="nuts">Nuts</option>
+      </select>
+      
 
         <a href="../Login/Login.html" class="ml-3 font-semibold hover:bg-green-700 hover:text-white px-6 py-1 rounded text-[1.2rem] bg-green-500 text-white duration-200">Login</a>
       </div>
@@ -107,7 +108,7 @@
 
         <!-- New Products -->
         <div class="product-card bg-white shadow rounded-lg p-4 hover:shadow-lg transition" data-name="milk dairy">
-          <img src="https://images.unsplash.com/photo-1589467229030-d52a1fba7f05" alt="Milk" class="w-full h-40 object-cover rounded-md mb-4" />
+          <img src="https://images.pexels.com/photos/2198626/pexels-photo-2198626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Milk" class="w-full h-40 object-cover rounded-md mb-4" />
           <h4 class="text-lg font-semibold text-green-800">Organic Milk</h4>
           <p class="text-sm text-gray-600">1L - Grass Fed</p>
           <div class="mt-2 flex justify-between items-center">
@@ -117,7 +118,7 @@
         </div>
 
         <div class="product-card bg-white shadow rounded-lg p-4 hover:shadow-lg transition" data-name="carrots vegetable">
-          <img src="https://images.pexels.com/photos/161519/pexels-photo-161519.jpeg" alt="Carrots" class="w-full h-40 object-cover rounded-md mb-4" />
+          <img src="https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Carrots" class="w-full h-40 object-cover rounded-md mb-4" />
           <h4 class="text-lg font-semibold text-green-800">Baby Carrots</h4>
           <p class="text-sm text-gray-600">Fresh & Crunchy 500g</p>
           <div class="mt-2 flex justify-between items-center">
@@ -127,7 +128,7 @@
         </div>
 
         <div class="product-card bg-white shadow rounded-lg p-4 hover:shadow-lg transition" data-name="almonds nuts">
-          <img src="https://images.unsplash.com/photo-1615486366334-6e3b5e3b0b94" alt="Almonds" class="w-full h-40 object-cover rounded-md mb-4" />
+          <img src="https://images.pexels.com/photos/57042/pexels-photo-57042.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Almonds" class="w-full h-40 object-cover rounded-md mb-4" />
           <h4 class="text-lg font-semibold text-green-800">Raw Almonds</h4>
           <p class="text-sm text-gray-600">Healthy Snack - 250g</p>
           <div class="mt-2 flex justify-between items-center">
